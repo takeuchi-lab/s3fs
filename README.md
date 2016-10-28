@@ -1,6 +1,6 @@
 #Simultaneous Safe Screening of Features and Samples in Doubly Sparse Modeling (ICML'16)
 
-<img src="fig/sss_illust2.png" width="920px">
+<img src="fig/sss_illust2.png" width="900px">
 
 
 ##Abstract
@@ -9,10 +9,11 @@ The problem of learning a sparse model is conceptually interpreted as the proces
 
 ##Result
 
-<img src="fig/0205_rate2_real-sim.png" width="920px">
+<img src="fig/0205_rate2_real-sim.png" width="900px">
 
+Safe screening and keeping rates for classiﬁcation problems. The three plots in the left show the individual safe feature/sample screening rates (the middle and the bottom ones are for alpha i star = 0 and alpha i star = pm 1, respectively). The three plots in the center show the additional safe screening rates by simultaneously considering feature and sample screenings. The gray area in these center plots corresponds to the blue area in the corresponding left plot. In these gray area, the individual safe screening performances are good enough (screening rate > 0.95) and additional screening is unnecessary. The top right and middle right plots show the safe keeping rates for feature and samples, respectively. The bottom right plot shows the numbers of non-active features and samples for various values of lambda.
 
-##Enviromental Requirement
+##Environmental Requirement
 * gcc version *> 4.8.0*
 * cmake version *> 2.8.12*
 
@@ -44,3 +45,5 @@ make
 - safe feature screeing:  `./test/elastic_soft_module -s 16 -e 1e-9 -d 1 [dataset_filename] `
 - safe sample screeing:  `./test/elastic_soft_module -s 17 -e 1e-9 - d 1 [dataset_filename] `
 
+##LISENCE
+MIT
